@@ -1,0 +1,11 @@
+# Android Release Signing Configuration
+# Copy this file to key.properties and fill in your values
+# DO NOT commit key.properties to version control!
+
+storePassword=YOUR_KEYSTORE_PASSWORD
+keyPassword=YOUR_KEY_PASSWORD
+keyAlias=carsiqai
+storeFile=/path/to/your/carsiqai-release-key.jks
+
+# To generate a keystore, run:
+# keytool -genkey -v -keystore ~/carsiqai-release-key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias carsiqai
